@@ -1,0 +1,64 @@
+<nav class="navigation">
+  <div class="nav-container">
+    <div class="nav-logo-container">
+      <img src="../../../assets/favourite.png" alt="">
+      <h1 class="app-logo">ICupid</h1>
+    </div>
+    <div class="nav-link-container">
+      <a class="nav-link" routerLink="/doubletake">
+        <div class="nav-bar-link-container">
+          <svg width="19" height="19" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="navbar-link-icon">
+            <g id="doubletake-icon-Symbols" fill="none" fill-rule="evenodd">
+              <g id="doubletake-icon-Icon/DoubleTake/24" fill="#8c8c8c" fill-rule="nonzero">
+                <path
+                  d="M23.25 0a.75.75 0 0 1 .75.75v16.5a.75.75 0 0 1-.75.75H18v5.25a.75.75 0 0 1-.648.743L17.25 24H.75a.75.75 0 0 1-.75-.75V6.75A.75.75 0 0 1 .75 6H6V.75A.75.75 0 0 1 6.75 0h16.5zM6 7.5H1.5v15h15V18H6.75a.75.75 0 0 1-.75-.75V7.5zm16.5-6h-15l-.001 5.235.001.015v9.75h.495a7.043 7.043 0 0 1 3.188-5.172 4.5 4.5 0 1 1 7.634.002 7.035 7.035 0 0 1 3.188 5.17h.495v-15zm-4.697 10.965l-.145.113a4.48 4.48 0 0 1-2.658.869 4.48 4.48 0 0 1-2.804-.98 5.54 5.54 0 0 0-2.69 4.033h10.988a5.545 5.545 0 0 0-2.69-4.035zM15 5.947a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"
+                  id="doubletake-icon-Combined-Shape"></path>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <span class="nav-bar-link-text">DoubleTake</span>
+      </a>
+      <a class="nav-link" routerLink="/likes">
+        <span class="like-cnt" *ngIf="accountService.likesCnt > 0">{{accountService.likesCnt}}</span>
+        <div class="nav-bar-link-container">
+          <svg width="19" height="19" viewBox="0 0 24 22" xmlns="http://www.w3.org/2000/svg" class="navbar-link-icon">
+            <g id="navbar-likes-likes-icon-Symbols" fill="none" fill-rule="evenodd">
+              <g id="navbar-likes-likes-icon-Icon/Like/24" transform="translate(0 -2)" fill="#8c8c8c"
+                fill-rule="nonzero">
+                <path
+                  d="M17.437 2.162C21.07 2.162 24 5.244 24 9.026c0 2.91-2.097 6.162-5.601 9.607a49.2 49.2 0 0 1-3.888 3.417l-.727.568c-.38.291-.72.543-1.007.75l-.349.247a.75.75 0 0 1-.85.004l-.5-.353-.62-.456-.676-.516a49.08 49.08 0 0 1-3.927-3.38c-2.356-2.267-4.129-4.5-5.083-6.634C.267 11.152 0 10.065 0 9.026c0-3.782 2.93-6.864 6.563-6.864 2.14 0 4.081 1.08 5.29 2.8l.147.22.147-.22c1.209-1.72 3.15-2.8 5.29-2.8zm0 1.5c-2.113 0-3.987 1.387-4.731 3.454-.238.662-1.174.662-1.412 0-.744-2.067-2.618-3.454-4.731-3.454-2.787 0-5.063 2.394-5.063 5.364 0 .81.217 1.694.641 2.642.86 1.923 2.524 4.02 4.754 6.165a47.605 47.605 0 0 0 3.807 3.276l.529.405.251.188.516.378.392-.289c.14-.104.287-.215.443-.334l.746-.582a47.725 47.725 0 0 0 3.768-3.312c3.237-3.181 5.153-6.154 5.153-8.537 0-2.97-2.276-5.364-5.063-5.364zM7.252 5.404a.75.75 0 0 1 0 1.5 2.543 2.543 0 0 0-2.543 2.543.75.75 0 0 1-1.5 0 4.043 4.043 0 0 1 4.043-4.043z"
+                  id="navbar-likes-likes-icon-Combined-Shape"></path>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <span class="nav-bar-link-text">Likes</span>
+      </a>
+      <a class="nav-link" routerLink="/messages">
+        <div class="nav-bar-link-container">
+          <svg width="19" height="19" viewBox="0 0 24 22" xmlns="http://www.w3.org/2000/svg" class="navbar-link-icon">
+            <g id="message-icon-Symbols" fill="none" fill-rule="evenodd">
+              <g id="message-icon-Icon/Messages/24" transform="translate(0 -1)" fill="#8c8c8c" fill-rule="nonzero">
+                <path
+                  d="M23.25 1.071a.75.75 0 0 1 .75.75v15a.75.75 0 0 1-.75.75H6.418L1.28 22.71a.75.75 0 0 1-1.28-.53V1.82a.75.75 0 0 1 .75-.75h22.5zm-.75 1.5h-21v17.797l4.077-4.077a.75.75 0 0 1 .53-.22H22.5v-13.5zM15 10.714a.75.75 0 1 1 0 1.5H6a.75.75 0 1 1 0-1.5zm3-4.286a.75.75 0 1 1 0 1.5H6a.75.75 0 0 1 0-1.5z"
+                  id="message-icon-Combined-Shape"></path>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <span class="nav-bar-link-text">Messages</span>
+      </a>
+    </div>
+    <div class="profile-btn-container">
+      <a href="" class="profile-btn nav-link">
+        <div class="profile-btn-details">
+          <div class="profile-btn-thumbnail-wrapper">
+            <img class="profile-btn-thumbnail" [src]="accountService.pictures[0]" alt="profile pic">
+          </div>
+          <div class="profile-btn-username">{{loggedUserName}}</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</nav>

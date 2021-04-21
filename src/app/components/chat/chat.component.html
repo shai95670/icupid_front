@@ -1,0 +1,32 @@
+<div class="chat-container">
+    <div class="chat">
+        <div class="chat-header-container">
+            <div class="user-details-container">
+                <img [src]="chatBoxDetails.pictures[0]" alt="" srcset="">
+                <h3>{{chatBoxDetails.aboutUser.name}}</h3>
+            </div>
+            <div class="chat-util-container">
+                <i class="fa fa-close" style="font-size:36px"></i>
+                <!-- <img src="https://img.icons8.com/fluent-systems-regular/24/000000/close-window.png"/> -->
+            </div>
+        </div>
+        <div class="chat-body-container">
+            <ul class="chat-body">
+              <li *ngFor="let msg of msgs">
+                  <p [ngClass]="{'logged-user-msg ': msg.from === this.accountService.loggedUserName, 'other-user-msg': msg.from !== this.accountService.loggedUserName}">{{msg.from}}: {{msg.content}}</p>
+              </li> 
+            </ul>
+            <span *ngIf="whoIsTypingStr" class="is-typing-msg">{{whoIsTypingStr}}</span>
+        </div>
+        <div class="chat-input-container">
+            <textarea cols="30"
+             rows="10"
+             class="chat-input-area"
+             placeholder="Say something ..."
+             type="text"
+             (input)="onUserTyping()"
+             [(ngModel)]="msg.content"></textarea>
+            <button (click)="sendPrivateMsg()">Send</button>
+        </div>
+    </div>
+</div>

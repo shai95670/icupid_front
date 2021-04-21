@@ -1,0 +1,10 @@
+<form class="signin-form" [formGroup]="signinForm" (ngSubmit)="onSubmit(signinForm.value)">
+    <i class="fa fa-genderless" style="font-size:36px;"></i>
+    <h2>Login to ICUPID</h2>
+    <input type="email" formControlName="email" placeholder="Email">
+    <input type="password" formControlName="password" placeholder="Password">
+    <span *ngIf="errorMessage">{{errorMessage}}</span>
+    <a routerLink="/signup">SIGNUP</a>
+    <button class="button" type="submit">SIGNIN</button>
+    <i class="fa fa-close" style="font-size:27px" (click)="onCloseBtnEvent($event)"></i>
+</form>

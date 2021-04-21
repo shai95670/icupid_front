@@ -1,0 +1,31 @@
+<div class="signup-form-container">
+    <form class="signup-form" [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+        <input type="email" formControlName="email" placeholder="Email *" required>
+        <input type="password" formControlName="password" placeholder="Password *" required>
+        <input type="number *" formControlName="age">
+        <input type="text" formControlName="name" placeholder="Full Name *">
+        <textarea formControlName="aboutYou" cols="30" rows="10" placeholder="Tell us a bit about yourself *"></textarea>
+        <input type="text" formControlName="city" placeholder="City *">
+        <photo-upload (fileUploaded)="addImgUrl($event)"></photo-upload>
+        <button class="button" type="submit" [disabled]="signupForm.status === 'INVALID'"
+                [ngClass]="{'btn-disabled':signupForm.status === 'INVALID', 'button':signupForm.status === 'VALID' }"
+        >
+        SIGNUP
+        </button>
+        <!-- <div *ngIf="signupForm.controls['email'].errors?.required">
+            Email is required.
+        </div>
+        <div *ngIf="signupForm.controls['password'].errors?.required">
+            Password is required.
+        </div>
+        <div *ngIf="signupForm.controls['name'].errors?.required">
+            Name is required.
+        </div>
+        <div *ngIf="signupForm.controls['aboutYou'].errors?.required">
+            AboutYou is required.
+        </div>
+        <div *ngIf="signupForm.controls['age'].errors">
+            Minimum Age 18 Years old.
+        </div> -->
+    </form>
+</div>

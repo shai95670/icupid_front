@@ -1,0 +1,22 @@
+<div class="stack-view-outer-container" *ngIf="match">
+    <div class="stack-view-inner-container">
+        <div class="match-details-container">
+            <div class="details-container">
+                <span>{{match.aboutUser.name}}</span>
+                <span>{{match.aboutUser.age}}</span>
+                <span>{{match.aboutUser.city}}</span>
+            </div>
+            <div class="btns-container">
+                <button class="btn-pass" (click)="doPassOrLike('pass')">X PASS</button>
+                <button class="btn-like" (click)="doPassOrLike('like')">
+                    <svg height="27" viewBox="0 0 30 27" width="30" xmlns="http://www.w3.org/2000/svg"><mask id="heart-svg" fill="#fff"><path d="M0 0h30v26.784H0z" fill-rule="evenodd"></path></mask><path d="M5.551 8.695a1 1 0 1 1-2 0 5.396 5.396 0 0 1 5.39-5.39 1 1 0 0 1 0 2 3.394 3.394 0 0 0-3.39 3.39m9.45 18.089s15-10.36 15-18.632C30 3.65 26.53 0 22.25 0 18.933 0 16.107 2.19 15 5.266 13.891 2.19 11.065 0 7.75 0 3.47 0 0 3.65 0 8.152c0 8.395 15 18.632 15 18.632" fill="white" fill-rule="evenodd" mask="url(#a)"></path></svg>
+                    LIKE
+                </button>
+            </div>
+        </div>
+        <ng-image-slider [images]="generateImgObjArr()" #nav></ng-image-slider>
+        <div class="stack-txt">
+            <span>{{match.aboutUser.aboutMe}}</span>
+        </div>
+    </div>
+</div>

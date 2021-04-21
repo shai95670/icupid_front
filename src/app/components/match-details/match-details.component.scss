@@ -1,0 +1,16 @@
+.match-details-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 8px;
+    .informative-match-details-container, .general-match-details-container {
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1), 0 1px 0 rgba(0, 0, 0, 0.14);
+        background-color: white;
+        padding: 24px;
+    }
+    .informative-match-details-container h2{
+      font-size: 19px;  
+    }
+    .general-match-details-container h2{
+      font-size: 17px;  
+    }
+}

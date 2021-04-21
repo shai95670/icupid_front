@@ -1,0 +1,28 @@
+.like-nav-container {
+    background-color: #3b354d;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    
+    .like-nav {
+        width: 40%;
+
+        ul {
+            margin: 0;
+            display: flex;
+            justify-content: space-evenly;
+            height: 50px;
+            align-items: center;
+
+            a {
+              color: white; 
+              text-decoration: none; 
+            }
+
+            a:hover {
+              background: #333;
+              color: #8c8c8c;
+            }
+        }
+    }
+}

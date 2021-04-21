@@ -1,0 +1,3 @@
+<app-double-take-nav [loggedUserName]="accountService.loggedUserName"></app-double-take-nav>
+<app-messages-list [users]="accountService.matches"></app-messages-list>
+<app-chat *ngIf="clickedMsgBoxDetails" [chatBoxDetails]="clickedMsgBoxDetails"></app-chat>

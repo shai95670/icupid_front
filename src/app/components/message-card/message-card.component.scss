@@ -1,0 +1,23 @@
+.msg-card-container {
+    border-radius: 0.4rem;
+    background-color: #e45b5c;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+
+    img {
+        width: 69px;
+        height: 60px;
+        position: relative;
+        bottom: 27px;
+        right: 40px;
+        border-radius: 0.4rem;
+    }
+
+    h3 {
+        font-size: 0.95em;  
+    }
+}

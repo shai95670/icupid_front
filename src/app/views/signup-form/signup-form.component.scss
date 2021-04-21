@@ -1,0 +1,80 @@
+//TODO: REFACTOR TO AN SCSS FUNCTION THAT CREATES FORMS 
+
+.signup-form-container {
+  background-color: white;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://gl-images.condecdn.net/image/eKPJkWMMkV5/crop/1440/0.5235602094240838/f/hero.jpg);
+  /* height: 80%; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .signup-form {
+    display: flex;
+    flex-direction: column;
+    width: 319px;
+    background-color: white;
+    padding: 27px;
+    border-radius: 0.25rem;
+    justify-content: space-between;
+    height: 607px;
+
+    //TODO: REFACTOR TO A form input class
+    input {
+      padding: 10px;
+      background-color: #ededed;
+      border: none;
+      border-radius: .25rem;
+      color: #9f9f9f;
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+
+    //TODO: REFACTOR TO A form  button class
+    .button {
+      width: 318px;
+      padding: 15px;
+      background-color: #e0595b;
+      border-radius: 0.25rem;
+      border: none;
+      color: white;
+      cursor: pointer;
+      border-color: #e0595b;
+      letter-spacing: 1.7px;
+      font-weight: 600;
+      margin-top: 13px;
+    }
+
+    textarea {
+      padding: 15px;
+      background-color: rgb(237, 237, 237);
+      border: none;
+      border-radius: 0.25rem;
+      color: rgb(159, 159, 159);
+      font-size: 15px;
+      width: 288px;
+      height: 71px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+
+
+.btn-disabled {
+  width: 318px;
+  padding: 15px;
+  border-radius: 0.25rem;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-color: #e0595b;
+  letter-spacing: 1.7px;
+  font-weight: 600;
+  margin-top: 13px;
+  background-color: #e0595b4d;
+}

@@ -1,0 +1,101 @@
+.stack-view-outer-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    .stack-view-inner-container {
+        padding: 30px;
+        background-color: white;
+        box-shadow: 0 1px 4px rgba(0,0,0,.1), 0 1px 0 rgba(0,0,0,.14);
+        width: 700px;
+        border-radius: 2%;
+
+        .stack-txt {
+            bottom: 0;
+            color: #2a2f35;
+            font-size: 17px;
+            line-height: 90px;
+            font-weight: 600;
+
+            span {
+                position: relative;
+                left: 8px;
+            }
+        }
+        
+        .match-details-container {
+            display: flex;
+            justify-content: space-between;
+            height: 82px;
+            align-items: center;
+            display: flex;
+            
+            .details-container {
+                display: flex;
+                justify-content: space-around;
+                width: 34%;
+                font-size: 17px;
+                font-weight: 700; 
+
+                a {
+                    text-decoration: none;
+                    color: #0500be;
+                }
+            }
+            .btns-container {
+                display: flex;
+                width: 45%;
+                justify-content: space-between;
+                align-items: center;
+
+                .btn-pass {
+                    width: 141px;
+                    border-radius: 50%;
+                    border: 0;
+                    cursor: pointer;
+                    border-radius: 0.3rem;
+                    padding: 9px 0;
+                    font-weight: 700;
+                    font-size: 16px;
+                    background-color: #3b354d;
+                    color: white;
+                    height: 44px;
+                }
+                .btn-pass:hover {
+                    background-color: #1a1a1a;
+                    color: #fff;
+                }
+                .btn-like {
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    width: 141px;
+                    height: 46px;
+                    border-radius: 0.3rem;
+                    border: 0;
+                    cursor: pointer;
+                    padding: 9px 0;
+                    font-weight: 700;
+                    font-size: 16px;
+                    background-color: #e45b5c;
+                    color: white;
+                }
+                .btn-like:hover {
+                    background-color: red;
+                    color: white;  
+                }
+            }
+        }
+
+        .match-img-gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+
+            img {
+                width: 286px;
+                height: 286px;
+                border-radius: 2%;
+                margin-right: 6px;
+            }
+        }
+    }
+}

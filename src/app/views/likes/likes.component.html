@@ -1,0 +1,7 @@
+<app-double-take-nav [loggedUserName]="accountService.loggedUserName"></app-double-take-nav>
+<app-like-nav [likeCnt]="accountService.likesCnt" (changeLikeType)="onChangeLikeType($event)"></app-like-nav>
+
+<!-- <h1>{{msg}}</h1> -->
+<app-like-card-list [likes]="getLikesByType()" *ngIf="getLikesByType().length > 0"></app-like-card-list>
+<!-- <app-no-likes-banner *ngIf="getLikesByType().length === 0"></app-no-likes-banner> -->
+<app-footer></app-footer>

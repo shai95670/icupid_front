@@ -1,0 +1,102 @@
+.chat {
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    left: 82px;
+    
+    .chat-header-container {
+        width: 380px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #3b354d;
+        border-top-left-radius: 0.4rem;
+        border-top-right-radius: 0.4rem;  
+        
+        .user-details-container {
+            display: flex;
+            width: 46%;
+            justify-content: space-around;
+            align-items: center;
+            
+            img {
+                height: 40px;
+                width: 40px;
+                border-radius: 100%;
+                object-fit: cover  
+            }
+
+            h3 {
+                color: white;
+                font-size: 1.1em;
+            }
+        }
+
+        .chat-util-container {
+            display: flex;
+            width: 12%;
+
+            i {
+                font-size: 24px;
+                color: white;
+            }
+        }
+    }
+
+    .chat-body-container {
+        height: 300px;
+        background-color: white;
+        overflow-y: auto;
+
+        .is-typing-msg {
+            position: relative;
+            top: 211px;
+            left: 7px;
+            color: gray;  
+        }
+        
+        .chat-body {
+          list-style: none; 
+
+          p {
+            border-radius: 0.4rem;
+            padding: 5px;
+            width: fit-content;
+          }
+          
+          .logged-user-msg {
+            background-color: #3dbdb6;  
+          }
+        
+          .other-user-msg {
+            background-color: #6b79b7;  
+          }
+        }
+    }
+
+    .chat-input-container {
+        height: 43px;
+        display: flex;
+
+        textarea {
+            border: 0;
+            height: 63px;
+            border-top: 1px solid gray;  
+            width: 80%;
+        }
+
+        button {
+            width: 20%;
+            background-color: white;
+            border-right: 0;
+            border-left: 0;
+            border-bottom: 0;
+            color: #a1a1a1;
+            font-weight: 900;
+            cursor: pointer;
+            border-top: 1px solid gray;
+        }
+    }
+}

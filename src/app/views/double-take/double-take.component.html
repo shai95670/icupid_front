@@ -1,0 +1,14 @@
+<div *ngIf="this.accountService.loggedUser">
+    <app-double-take-nav [loggedUserName]="accountService.loggedUserName"></app-double-take-nav>
+    <app-stack-menue (filterUsersRequest)="filterUsers($event)"></app-stack-menue>
+    
+    <!-- <div class="stack-title-container">
+        <h1 class="stack-title">{{stackName}}</h1>
+    </div> -->
+    
+    <div>
+       <app-stack-view [match]="getCurrUser()" (doPassOrLikeRequest)="doPassOrLike($event)"></app-stack-view>
+    </div>
+    <app-footer></app-footer>  
+</div>
+

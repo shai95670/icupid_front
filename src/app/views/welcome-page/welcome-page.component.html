@@ -1,0 +1,29 @@
+<div class="hero-image">
+  <div class="hero-text">
+    <h1 class="welcome-page-title">Online Dating, Made simple</h1>
+    <p>
+      ICupid is a simple lighthweight online dating app,
+      It Takes away all the unimportent stuff when it comes to online dating dating,
+      and leaves only the important parts to create a good online dating expirience.
+    </p>
+    <div class="btn-container">
+      <a (click)="showHideLoginForm('show')">LOGIN</a>
+    </div>
+  </div>
+</div>
+
+<div class="modal" *ngIf="isShowLogin">
+  <app-signin-form (closeBtnEvent)="showHideLoginForm()"></app-signin-form>
+</div>
+
+<app-footer></app-footer>
+<!-- 
+<footer class="welcome-page-footer">
+  <div class="footer-social-btns-container">
+    <div class="footer-social-btns-container-inner">
+      <a><i class="fa fa-linkedin" style="font-size:21px"></i>Linkdin</a>
+      <a><i class="fa fa-git" style="font-size:21px"></i>Github</a>
+    </div>
+  </div>
+  <p>Handcrafted by &#174; Shai Isenhower</p>
+</footer> -->

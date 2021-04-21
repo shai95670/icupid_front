@@ -1,0 +1,36 @@
+.welcome-page-footer {
+    height: 15%;
+    background-color: #3b354d;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+
+  .footer-social-btns-container {
+    position: relative;
+    top: 74px;
+    display: flex;
+    justify-content: center;
+
+    .footer-social-btns-container-inner {
+      display: flex;
+      justify-content: space-evenly;
+      color: white;
+      width: 272px;
+
+      a {
+        width: 43%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: baseline;
+      }
+    }
+  }
+
+  p {
+    position: relative;
+    top: 80px;
+    color: white;
+  }
+}

@@ -1,0 +1,13 @@
+.msg-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0ebeb;
+    height: 100%;
+    padding-top: 95px;
+
+    .msg-list {
+        padding: 0;
+        width: 800px;
+    }
+}
